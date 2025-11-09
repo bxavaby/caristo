@@ -25,7 +25,7 @@ _The only tool you will ever rarely need!_
 
 <div align="left">
 
-## Install
+## Install (not released yet, though)
 
 Download the latest binary for your platform from [**Releases**](../../releases/latest) and add it to your PATH:
 
