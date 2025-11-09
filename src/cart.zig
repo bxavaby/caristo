@@ -4,6 +4,21 @@
 // and reservoir sampling
 
 const std = @import("std");
-const defaultCount: usize = 3;
 
-// pub fn reservoirSample(allocator: *std.mem.Allocator, count: usize) !void {}
+// pub fn reservoirSample(allocator: std.mem.Allocator, count: usize) !void {
+// 1. Initialize a buffer
+
+// 2. Initialize a reader
+
+// 3. Allocate array to hold sampled lines
+
+// 4. Initialize line counter and rng
+
+// 5. Initialize reservoir with first lines
+
+// 6. Initialize stdout buffer + writer
+
+// 7. Print samples
+
+// 8. Flush stdout
+// }

@@ -63,40 +63,49 @@
 // Repo: https://github.com/bxavaby/caristo
 
 const std = @import("std");
-const caristo = @import("caristo");
+const cli = @import("cli.zig");
+const cart = @import("cart.zig");
+
+const debug = std.debug;
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
-    defer gpa.deinit();
     const allocator = gpa.allocator();
 
-    // Parse cli args
-    const options = caristo.cli.parseArgs(allocator) catch |err| switch (err) {
+    const options = cli.parseArgs(allocator) catch |err| switch (err) {
         error.InvalidCount => {
-            caristo.cli.printHelpWithEr("invalid count specified");
+            cli.printHelpWithEr("invalid count specified");
             return;
         },
         error.UnknownFlag => {
-            caristo.cli.printHelpWithEr("unknown flag");
+            cli.printHelpWithEr("unknown flag");
             return;
         },
         else => |e| {
-            std.debug.print("unexpected error: {any}\n", .{e});
+            debug.print("unexpected error: {any}\n", .{e});
             return;
         },
     };
 
     if (options.help) {
-        std.debug.print("caristo {s}\n", .{ caristo.cli.LOGO, caristo.cli.HELP });
+        debug.print("{s}\n{s}\n", .{ cli.LOGO, cli.HELP });
         return;
     }
 
     if (options.version) {
-        std.debug.print("caristo {s}\n", .{caristo.cli.VERSION});
+        debug.print("caristo {s}\n", .{cli.VERSION});
+        return;
+    }
+
+    const stdin_file = std.fs.File.stdin();
+    const is_terminal = std.posix.isatty(stdin_file.handle);
+
+    if (is_terminal and options.count == null) {
+        debug.print("{s}\n", .{cli.EXAMPLE});
         return;
     }
 
     const count = if (options.count) |c| c else 3;
 
-    try caristo.cart.reservoirSample(allocator, count);
+    try cart.reservoirSample(allocator, count);
 }

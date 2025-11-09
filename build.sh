@@ -53,4 +53,12 @@ sleep 1
 
 sha256sum "$DIR"/caristo-* > "$DIR/checksums.txt"
 
+echo "Making caristo for this machine..."
+echo
+zig build -Dtarget=x86_64-linux -Doptimize=ReleaseSmall
+
+echo "Moving caristo to PATH..."
+echo
+cp zig-out/bin/caristo /usr/local/bin
+
 echo -e "\033[32m✓\033[0m All done!"
