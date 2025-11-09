@@ -7,7 +7,7 @@ _The only tool you will ever rarely need!_
 ───────────────────
 
 ![Deps](https://img.shields.io/badge/0-deps?style=plastic&label=deps&labelColor=000000&color=D86830)
-[![Last Commit](https://img.shields.io/github/last-commit/bxavaby/caristo?style=plastic&labelColor=000000&color=D86830)](https://github.com/bxavaby/caristo/commits/main)
+![Last Commit](https://img.shields.io/github/last-commit/bxavaby/caristo?style=plastic&labelColor=000000&color=D86830)](https://github.com/bxavaby/caristo/commits/main)
 
 <img src="assets/help.png" width="536" alt="caristo help" />
 
@@ -79,10 +79,6 @@ sudo mv zig-out/bin/caristo /usr/local/bin/
 
 ───────────────────
 
-*First ziguana steps. Decided to make something moderately useful, while keeping it somewhat crude. Hence the logo.*
-
 **[Report Bug](../../issues)** | **[Suggest Feature](../../issues)**
 
 **MIT License © 2025 bxavaby**
-
-</div>
