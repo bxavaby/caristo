@@ -1,15 +1,17 @@
 <div align=center>
 
-#### `babynames.txt | caristo 1`
+### `babynames.txt | caristo 1`
 
 _The only tool you will ever rarely need!_
 
 ───────────────────
 
 ![Deps](https://img.shields.io/badge/0-deps?style=plastic&label=deps&labelColor=000000&color=D86830)
-![Last Commit](https://img.shields.io/github/last-commit/bxavaby/caristo?style=plastic&labelColor=000000&color=D86830)](https://github.com/bxavaby/caristo/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/bxavaby/caristo?style=plastic&labelColor=000000&color=D86830)](https://github.com/bxavaby/caristo/commits/main)
 
-<img src="assets/help.png" width="536" alt="caristo help" />
+<br>
+
+<img src="assets/help.png" width="804" alt="caristo help" />
 
 <br><br>
 
