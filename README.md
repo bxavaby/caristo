@@ -1,3 +1,11 @@
+> [!WARNING]
+> Main component currently under development. <br>
+> Wait for first release, or consider contributing!
+
+#
+
+<br>
+
 <div align=center>
 
 ### `babynames.txt | caristo 1`
