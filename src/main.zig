@@ -41,7 +41,7 @@
 // the number after the name, like so:
 //
 // 'ls | caristo 3'
-// -> this randomly picks three files from current dir
+// -> this randomly picks three elements from current dir
 //
 // What if the specified count is greater than the list
 // length?
