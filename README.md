@@ -2,6 +2,6 @@
 
 #### `babynames.txt | caristo 1`
 
-_The only tool you will ever need to help picking your baby's name._
+_The only tool you will ever rarely need_
 
 </div>
