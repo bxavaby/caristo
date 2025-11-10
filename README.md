@@ -8,6 +8,8 @@
 
 <div align=center>
 
+<img src="assets/caristo.svg" width="180" alt="caristo logo" />
+
 ### `babynames.txt | caristo 1`
 
 _The only tool you will ever rarely need!_
