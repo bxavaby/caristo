@@ -19,7 +19,7 @@ _The only tool you will ever rarely need!_
 
 <br>
 
-<img src="assets/help.png" width="804" alt="caristo help" />
+<img src="assets/help.png" width="837" alt="caristo help" />
 
 <br><br>
 

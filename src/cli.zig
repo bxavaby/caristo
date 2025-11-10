@@ -32,8 +32,9 @@ pub const HELP =
     \\
     \\Description:
     \\  Given a list, caristo will pick a default amount of elements
-    \\  from it, and pass them to stdout. The default value depends
-    \\  on the list length, but it can be overridden with [count].
+    \\  from it, and pass them to stdout. The default value is 3, as
+    \\  it is a balanced value and conveys luck in Italy, however it
+    \\  can be overridden by specifying [count].
     \\
     \\Options:
     \\  -h, --help             Display this help message

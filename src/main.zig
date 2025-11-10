@@ -105,7 +105,7 @@ pub fn main() !void {
         return;
     }
 
-    const count = if (options.count) |c| c else 3;
+    // const count = if (options.count) |c| c else 3;
 
-    try cart.reservoirSample(allocator, count);
+    // try cart.reservoirSample(allocator, count);
 }
